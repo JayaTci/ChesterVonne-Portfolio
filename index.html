@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio - Home">
-  <title>Home | Portfolio</title>
+  <meta name="description" content="Portfolio - Welcome to the Adventure!">
+  <title>Adventure Awaits! | Portfolio</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,237 +15,77 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/works.css">
-  <link rel="stylesheet" href="css/adventure-artworks.css">
+  <link rel="stylesheet" href="css/intro.css">
 </head>
-<body class="works-page">
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-content">
-      <a href="intro.html" class="site-logo">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-          <polyline points="9 22 9 12 15 12 15 22"></polyline>
-        </svg>
-        <span>Chester Vonne D. Cairel</span>
-      </a>
+<body class="intro-page">
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn" aria-label="Toggle day/night" title="Toggle day and night mode">
+      <span class="sun-emoji">☀️</span>
+      <span class="moon-emoji">🌙</span>
+    </button>
+  </div>
 
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="assets/resume/ChesterCV.pdf" download class="resume-btn" title="Download Resume">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-          <span>Resume</span>
-        </a>
-        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle day/night" title="Toggle day and night mode">
-          <span class="sun-emoji">☀️</span>
-          <span class="moon-emoji">🌙</span>
-        </button>
-      </nav>
+  <!-- Main Intro Container -->
+  <main class="intro-container">
+    <!-- Animated Background Elements -->
+    <div class="bg-elements">
+      <!-- Floating Clouds -->
+      <div class="cloud cloud-1">☁️</div>
+      <div class="cloud cloud-2">☁️</div>
+      <div class="cloud cloud-3">☁️</div>
+
+      <!-- Twinkling Stars -->
+      <div class="star star-1">⭐</div>
+      <div class="star star-2">✨</div>
+      <div class="star star-3">⭐</div>
+      <div class="star star-4">✨</div>
+      <div class="star star-5">⭐</div>
     </div>
-  </header>
 
-  <!-- Main Content -->
-  <main class="main-content">
-    <div class="container">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <h1 class="page-title">Home Page</h1>
-      </section>
+    <!-- Grass Hills at Bottom -->
+    <div class="grass-hills">
+      <div class="hill hill-1"></div>
+      <div class="hill hill-2"></div>
+      <div class="hill hill-3"></div>
+    </div>
 
-      <!-- Category Label -->
-      <div class="category-label">
-        <span>My Adventures in Code</span>
+    <div class="intro-content">
+      <!-- Welcome Text -->
+      <div class="welcome-text">
+        <h1 class="adventure-title">🎒 Welcome to my digital playground!
+        🗡️</h1>
       </div>
 
-      <!-- Projects Grid -->
-      <section class="projects-grid">
-        <!-- Project Card 1 - Sky Adventure -->
-        <article class="project-card">
-          <div class="project-info">
-            <h2 class="project-title">Project One</h2>
-            <span class="project-tag">Sky Adventure</span>
-            <p class="project-description">
-              An exciting adventure through the clouds! This project features beautiful animations, smooth interactions, and a playful design that captures the spirit of exploration.
-            </p>
+      <!-- Main Illustration -->
+      <div class="illustration-wrapper">
+        <div class="illustration-frame">
+          <img src="assets/images/intro-illustration.png" alt="Adventure Illustration" class="intro-illustration">
+        </div>
+      </div>
 
-            <!-- Tech Stack -->
-            <div class="tech-stack">
-              <span class="tech-badge">React</span>
-              <span class="tech-badge">CSS3</span>
-              <span class="tech-badge">JavaScript</span>
-            </div>
+      <!-- Tagline -->
+      <p class="intro-tagline">Exploring code, building projects, and having fun along the way.</p>
 
-            <!-- Project Links -->
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn primary-btn">
-                <span>Live Demo</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn secondary-btn">
-                <span>GitHub</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-preview">
-            <div class="adventure-artwork artwork-sky">
-              <div class="artwork-cloud cloud-a">☁️</div>
-              <div class="artwork-cloud cloud-b">☁️</div>
-              <div class="artwork-sun">☀️</div>
-              <div class="artwork-bird">🦅</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 2 - Candy Kingdom -->
-        <article class="project-card">
-          <div class="project-info">
-            <h2 class="project-title">Project Two</h2>
-            <span class="project-tag">Candy Kingdom</span>
-            <p class="project-description">
-              Sweet and colorful! A vibrant project filled with delightful interactions and candy-colored designs. Built with love and lots of creative energy.
-            </p>
-
-            <!-- Tech Stack -->
-            <div class="tech-stack">
-              <span class="tech-badge">HTML5</span>
-              <span class="tech-badge">CSS3</span>
-              <span class="tech-badge">JavaScript</span>
-            </div>
-
-            <!-- Project Links -->
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn primary-btn">
-                <span>Live Demo</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn secondary-btn">
-                <span>GitHub</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-preview">
-            <div class="adventure-artwork artwork-candy">
-              <div class="artwork-candy-piece candy-1">🍬</div>
-              <div class="artwork-candy-piece candy-2">🍭</div>
-              <div class="artwork-candy-piece candy-3">🍰</div>
-              <div class="artwork-sparkle sparkle-1">✨</div>
-              <div class="artwork-sparkle sparkle-2">✨</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 3 - Grasslands -->
-        <article class="project-card">
-          <div class="project-info">
-            <h2 class="project-title">Project Three</h2>
-            <span class="project-tag">Grasslands</span>
-            <p class="project-description">
-              Natural and adventurous! Exploring the great outdoors with smooth animations and earthy tones. A journey through green fields and sunshine.
-            </p>
-
-            <!-- Tech Stack -->
-            <div class="tech-stack">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">Flask</span>
-              <span class="tech-badge">SQLite</span>
-            </div>
-
-            <!-- Project Links -->
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn primary-btn">
-                <span>Live Demo</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn secondary-btn">
-                <span>GitHub</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-preview">
-            <div class="adventure-artwork artwork-grass">
-              <div class="artwork-tree">🌳</div>
-              <div class="artwork-flower flower-1">🌸</div>
-              <div class="artwork-flower flower-2">🌼</div>
-              <div class="artwork-butterfly">🦋</div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 4 - Ice Kingdom -->
-        <article class="project-card">
-          <div class="project-info">
-            <h2 class="project-title">Project Four</h2>
-            <span class="project-tag">Ice Kingdom</span>
-            <p class="project-description">
-              Cool and magical! A frosty adventure with icy blues and shimmering effects. Built with precision and a touch of winter magic.
-            </p>
-
-            <!-- Tech Stack -->
-            <div class="tech-stack">
-              <span class="tech-badge">Java</span>
-              <span class="tech-badge">Spring Boot</span>
-              <span class="tech-badge">MySQL</span>
-            </div>
-
-            <!-- Project Links -->
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn primary-btn">
-                <span>Live Demo</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn secondary-btn">
-                <span>GitHub</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-preview">
-            <div class="adventure-artwork artwork-ice">
-              <div class="artwork-snowflake snow-1">❄️</div>
-              <div class="artwork-snowflake snow-2">❄️</div>
-              <div class="artwork-snowflake snow-3">❄️</div>
-              <div class="artwork-star">⭐</div>
-            </div>
-          </div>
-        </article>
-      </section>
+      <!-- Enter Button -->
+      <div class="enter-section">
+        <button class="enter-button">
+          <span class="button-text">Let's Go!</span>
+          <span class="button-icon">→</span>
+        </button>
+        <p class="enter-hint">Click to start the adventure</p>
+      </div>
     </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-emoji emoji-1">🎮</div>
+    <div class="floating-emoji emoji-2">🎨</div>
+    <div class="floating-emoji emoji-3">💻</div>
+    <div class="floating-emoji emoji-4">🎪</div>
   </main>
 
   <!-- Scripts -->
   <script src="js/theme.js"></script>
-  <script src="js/navigation.js"></script>
+  <script src="js/intro.js"></script>
 </body>
 </html>

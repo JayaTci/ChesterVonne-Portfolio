@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navigate after animation
     setTimeout(() => {
-      window.location.href = 'index.html';
+      window.location.href = 'home.html';
     }, 400);
   }
 
