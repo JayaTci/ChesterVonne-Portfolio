@@ -229,12 +229,17 @@
                5px 5px 0px rgba(0, 0, 0, 0.1);
   animation: wiggle 2s ease-in-out infinite;
   letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  border: 3px solid var(--color-text);
 }
 
 [data-theme="dark"] .adventure-title {
   color: var(--color-ice-king-blue);
   text-shadow: 3px 3px 0px var(--color-princess-pink),
                5px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: rgba(26, 26, 46, 0.85);
 }
 
 @keyframes wiggle {
@@ -536,7 +541,22 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .adventure-title {
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
+    padding: 0.8rem 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  .intro-tagline {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border: 2px solid var(--color-text);
+  }
+
+  [data-theme="dark"] .intro-tagline {
+    background-color: rgba(26, 26, 46, 0.9);
   }
 
   .illustration-wrapper {
@@ -553,8 +573,12 @@
   }
 
   .enter-button {
-    padding: 0.8rem 2rem;
-    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+  }
+
+  .enter-hint {
+    font-size: 0.95rem;
   }
 
   .cloud {
@@ -566,9 +590,9 @@
   }
 
   #theme-toggle-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
   }
 
   .grass-hills {
@@ -585,23 +609,43 @@
 @media (max-width: 480px) {
   .intro-content {
     padding: var(--spacing-lg) var(--spacing-md);
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
   }
 
   .adventure-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-shadow: 2px 2px 0px var(--color-jake-yellow),
                  3px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 0.7rem 1rem;
+    line-height: 1.5;
+  }
+
+  .intro-tagline {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .illustration-wrapper {
+    max-width: 100%;
+    padding: 0 1rem;
   }
 
   .illustration-frame {
     border-width: 3px;
     padding: 8px;
+    box-shadow:
+      4px 4px 0px var(--color-jake-yellow),
+      4px 4px 0px 2px var(--color-text),
+      8px 8px 15px rgba(0, 0, 0, 0.2);
   }
 
   .enter-button {
-    padding: 0.7rem 1.5rem;
-    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .enter-hint {
+    font-size: 0.85rem;
   }
 
   .floating-emoji {
@@ -609,6 +653,12 @@
   }
 
   .cloud {
+    font-size: 1.5rem;
+  }
+
+  #theme-toggle-btn {
+    width: 50px;
+    height: 50px;
     font-size: 1.5rem;
   }
 }
