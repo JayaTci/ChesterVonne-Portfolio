@@ -14,14 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Get form data
     const formData = new FormData(contactForm);
 
-    // Add your Web3Forms access key here
-    // Sign up at https://web3forms.com to get your free access key
-    // formData.append('access_key', 'YOUR_ACCESS_KEY_HERE');
+    // Add Web3Forms access key
+    formData.append('access_key', 'e3a1d2c4-0c38-4595-b0a2-777be25bb83d');
 
-    // For now, we'll just show a demo message
-    // Uncomment the code below when you have your access key
-
-    /*
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -39,13 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (error) {
       showStatus('error', 'Network error. Please check your connection and try again.');
     }
-    */
-
-    // Demo mode - remove this when you add your access key
-    showStatus('success', 'Demo mode: Form validation successful! To enable actual email sending, add your Web3Forms access key in contact-form.js');
-    setTimeout(() => {
-      contactForm.reset();
-    }, 2000);
   });
 
   function showStatus(type, message) {
