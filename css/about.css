@@ -268,9 +268,9 @@
   font-size: var(--font-size-body);
   font-weight: 600;
   font-family: inherit;
-  color: var(--color-background);
-  background-color: var(--color-text);
-  border: 2px solid var(--color-text);
+  color: #000000;
+  background-color: #ffffff;;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   cursor: pointer;
   transition: all var(--duration-fast) ease;
