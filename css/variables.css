@@ -1,0 +1,96 @@
+/* CSS Custom Properties / Design Tokens */
+
+:root {
+  /* Typography */
+  --font-en: "Comic Neue", "Comic Sans MS", "Chalkboard SE", "Comic Sans", cursive;
+  --font-ja: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic";
+
+  /* Font Sizes */
+  --font-size-base: clamp(14px, 1.17vw, 18px);
+  --font-size-small: 0.75rem;
+  --font-size-body: 0.875rem;
+  --font-size-large: 1.75rem;
+  --font-size-hero: clamp(1.5rem, 5vw, 3rem);
+
+  /* Line Heights */
+  --line-height: 1.6;
+  --line-height-tight: 1.2;
+  --line-height-relaxed: 1.8;
+
+  /* Spacing */
+  --padding-side: 1.25rem;
+  --grid-gap: 1.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 7rem;
+
+  /* Colors - Adventure Time Light Theme (Default) */
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Adventure Time Color Palette */
+  --color-sky-blue: #6FCFEB;
+  --color-grass-green: #8BC34A;
+  --color-finn-blue: #5BC0EB;
+  --color-jake-yellow: #FFC857;
+  --color-bmo-green: #7DCE82;
+  --color-princess-pink: #FFB6D9;
+  --color-ice-king-blue: #A8E6FF;
+
+  /* Main Theme Colors */
+  --color-bg: #FFF9E6;
+  --color-text: #2B7A78;
+  --color-border: rgba(43, 122, 120, 0.3);
+  --color-card-bg: #ffffff;
+  --color-tag-bg: var(--color-finn-blue);
+  --color-tag-text: var(--color-white);
+
+  /* Accent Colors */
+  --color-accent-1: var(--color-jake-yellow);
+  --color-accent-2: var(--color-princess-pink);
+  --color-accent-3: var(--color-grass-green);
+
+  /* Easing Functions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-base-transform: var(--ease-out-expo);
+  --ease-base-material: linear;
+
+  /* Animation Durations */
+  --duration-fast: 0.15s;
+  --duration-base: 0.3s;
+  --duration-slow: 0.6s;
+  --duration-base-transform: 1s;
+
+  /* Layout */
+  --global-header-height: 3.75rem;
+  --global-footer-margin: 22.4rem;
+  --max-content-width: 1400px;
+
+  /* Z-index Layers */
+  --z-index-base: 1;
+  --z-index-header: 1000;
+  --z-index-modal: 2000;
+  --z-index-loading: 99999;
+
+  /* Transitions */
+  --transition-theme: background-color var(--duration-base) var(--ease-base-material),
+                      color var(--duration-base) var(--ease-base-material);
+}
+
+/* Dark Theme - Nightosphere (Adventure Time Night) */
+[data-theme="dark"] {
+  --color-bg: #1a1a2e;
+  --color-text: #A8E6FF;
+  --color-border: rgba(168, 230, 255, 0.3);
+  --color-card-bg: #16213e;
+  --color-tag-bg: #FFB6D9;
+  --color-tag-text: #1a1a2e;
+
+  --color-accent-1: #FFC857;
+  --color-accent-2: #FF6B9D;
+  --color-accent-3: #7DCE82;
+}
