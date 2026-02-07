@@ -409,24 +409,38 @@
 
   .page-title {
     font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
   }
 
   .section-heading {
     font-size: 1.3rem;
+    margin-bottom: var(--spacing-md);
   }
 
   .skills-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
+  }
+
+  .skill-category {
+    background-color: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
   }
 
   .skill-category-title {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .skill-tags {
+    gap: 0.5rem;
   }
 
   .skill-tag {
     font-size: 0.8rem;
-    padding: 5px 10px;
+    padding: 6px 10px;
   }
 
   .bio-text {
@@ -440,6 +454,7 @@
 
   .social-link {
     font-size: 0.9rem;
+    padding: 0.6rem 0;
   }
 
   .accordion-trigger {
@@ -453,6 +468,11 @@
   .bio-section,
   .contact-section {
     margin-bottom: var(--spacing-md);
+  }
+
+  .skills-section {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
   }
 
   .contact-form-intro {
