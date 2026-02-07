@@ -60,7 +60,9 @@
 }
 
 .social-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   width: fit-content;
   font-size: var(--font-size-body);
   color: var(--color-text);
@@ -76,6 +78,16 @@
 
 .social-link:hover {
   opacity: 0.6;
+}
+
+.social-icon {
+  flex-shrink: 0;
+  stroke: currentColor;
+  transition: transform var(--duration-fast) ease;
+}
+
+.social-link:hover .social-icon {
+  transform: translateX(2px);
 }
 
 .email-copy-btn {
