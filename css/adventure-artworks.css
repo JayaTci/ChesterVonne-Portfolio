@@ -65,6 +65,13 @@
   background: linear-gradient(to top, var(--color-card-bg, #fff) 0%, transparent 100%);
 }
 
+/* On mobile, keep screenshot below project info instead of above title */
+@media (max-width: 1024px) {
+  .project-preview:has(.project-screenshot-scroll) {
+    order: unset;
+  }
+}
+
 @media (max-width: 768px) {
   .project-screenshot-scroll {
     min-height: 280px;
