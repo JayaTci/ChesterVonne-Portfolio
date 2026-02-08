@@ -65,11 +65,18 @@
   background: linear-gradient(to top, var(--color-card-bg, #fff) 0%, transparent 100%);
 }
 
-/* On mobile, keep screenshot below project info instead of above title */
+/* On mobile, unwrap project-info so we can place the screenshot between tech-stack and buttons */
 @media (max-width: 1024px) {
-  .project-preview:has(.project-screenshot-scroll) {
-    order: unset;
+  .project-card:has(.project-screenshot-scroll) .project-info {
+    display: contents;
   }
+
+  .project-card:has(.project-screenshot-scroll) .project-title { order: 1; width: 100%; }
+  .project-card:has(.project-screenshot-scroll) .project-tag { order: 2; }
+  .project-card:has(.project-screenshot-scroll) .project-description { order: 3; }
+  .project-card:has(.project-screenshot-scroll) .tech-stack { order: 4; }
+  .project-card:has(.project-screenshot-scroll) .project-preview { order: 5; width: 100%; min-height: 280px; }
+  .project-card:has(.project-screenshot-scroll) .project-links { order: 6; }
 }
 
 @media (max-width: 768px) {
