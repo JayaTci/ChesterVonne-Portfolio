@@ -39,10 +39,6 @@
   }
 }
 
-.project-card:hover .project-screenshot-scroll .scroll-screenshot {
-  animation-play-state: paused;
-}
-
 /* Subtle fade edges for scroll preview */
 .project-screenshot-scroll::before,
 .project-screenshot-scroll::after {
